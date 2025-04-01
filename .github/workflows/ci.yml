@@ -36,3 +36,6 @@ jobs:
           jenkinsfile: Jenkinsfile
           jcasc: jcasc.yml
           initHook: groovy.init.d
+- name: Download Jenkins WAR
+  run: |
+    curl -L -o jenkins.war https://updates.jenkins.io/download/war/2.503/jenkins.war
